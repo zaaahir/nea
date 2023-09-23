@@ -1,0 +1,7 @@
+PWD /Users/zaahir/Documents/c/c/FrontBackmatter
+INPUT /usr/local/texlive/2022/texmf.cnf
+INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT Contents.tex
+OUTPUT Contents.log
+OUTPUT Contents.pdf

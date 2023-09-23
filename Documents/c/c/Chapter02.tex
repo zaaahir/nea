@@ -1,0 +1,363 @@
+% !TEX root = classicthesis.tex
+
+%*****************************************
+\chapter{The C- Language}\label{ch:dashC}
+%*****************************************
+%\setcounter{figure}{10}
+% \NoCaseChange{Homo Sapiens}
+
+Although throughout the rest of this project we'll explore every nook and cranny of the C- languge, we spend this chapter to provide a small introduction to the general syntax, as a sort of preview of what our intepreter will use. We'll leave out many of the edge cases and details for later on and start with the mandatory \verb+"Hello, World!"+. 
+
+\begin{lstlisting}[language=C]
+print "Hello, world!";
+
+// Prints Hello, world!
+\end{lstlisting}
+
+The \verb+//+ line comment and trailing semicolon at the end of the expression point towards C-like syntax, which is what C- derives from. Note that there are no parenthesis around the string because we plan to have \verb+print+ as a built-in statement rather than as a library function. 
+
+\section{A Semantic Introduction}
+
+\subsection{Dynamic Typing}
+
+Unlike the language we are using to implement it, C- is dynamically typed, meaning that type is associated with run-time values rather than named variables, as type checking is done at run-time. We show a following example for one of the features that type checking provides. 
+
+\begin{lstlisting}[language=C]
+var a  = 1;
+var b = "two";
+
+print a + b;
+
+// Returns a type error; we are trying to sum a string and integer
+\end{lstlisting}
+
+We choose this method of implementation because of it's ease compared to a statically typed language, and because we can implement features such as reflection (the ability for a process to examine or modify its own behaviour) or downcasting (casting a reference of a base class to one of its derived classes). In the context of C++, downcasting manually casts the base class's object to the derived class's object, meaning we must specify the explicit typecast. Furthermore, the derived class can now add new functionality such as new data members which could not apply to the base class. Let's illustrate an example in C++.
+
+\begin{lstlisting}[language=C++]
+class Parent  
+{  
+    public:  
+        void base()  
+        {  
+            cout << "This is the Parent class function." << endl;   
+        }  
+};  
+  
+class Child : public Parent  
+{  
+    public:  
+        void derive()  
+        {  
+            cout << "This is the Child class function." << endl;  
+        }  
+};  
+  
+int main ()  
+{  
+    Parent pobj; // create the Parent's object
+    Child *cobj; // create the Child's object  
+      
+    // explicit type cast is required in downcasting  
+    cobj = (Child *) &pobj;  
+    cobj -> derive();  
+      
+    return 0;  
+}  
+
+// Outputs "This is the Child class function."
+\end{lstlisting}
+
+\subsection{Memory Management}
+
+High level languages typically eliminate the tedious approach of freeing and allocating system memory (such as in C with \verb+free()+), which is the approach we will be taking with C-. There are two approaches to automatic memory management, reference counting and tracing garbage collection, also just known as garbage collection (\acs{GC}). Note that reference counters are method of ``garbage collection'' but tracing garbage collection are used so often that both terms are now synonymous.
+
+Reference counters are a programming technique of storing the number of references, pointers, or handles to a resource, such as an object, a block of memory or disk space. These objects are reclaimed straight they can no longer referenced, unlike garbage collection, typically used in systems with limited memory to maintain responsiveness. Furthermore, it means non-memory resources such as operating system objects can be effectively managed, which are often much scarcer than memory. Most languages that started out using reference counters end up adding a full tracing garbage collecter, or at least enough of one to clean up object cycles. 
+
+Tracing garbage collection consists of determining which objects should be deallocated (``garbage collected'') by tracing which objects are reachable by a chain of references from certain ``root'' objects, and considering the rest as ``garbage'' and collecting them. This approach is typically more difficult due to the need to work at the level of raw memory.
+
+\subsection{Data Types}
+
+In the C- programming language, built-in data types are the atomic bricks that store every item of a program, and we only need to employ a few.
+
+Firstly, the boolean, a data type which has only two possible values, and a string literal to indicate each, unlike C which uses an unsigned integer. They are intended to signify true logical and mathematical or the negation of it, and we often see it used in conjunction with comparison operators. 
+
+\begin{lstlisting}[language=C]
+true; // not false
+false; // not true
+\end{lstlisting}
+
+\subsection{Numbers}
+
+Unlike C++, with number types such as \verb+int+, \verb+double+ and \verb+long long+, C- only utilizes a floating point double-precision (upto 15 decimal digits) number. This keeps things relatively simple while remaining relatively flexible and covering a wide range of numbers, only sacrificing a small amount of speed and memory. Furthermore, we will not implement hexadecimal or other number system bases, settling for only basic integer and decimal literals.
+
+\begin{lstlisting}[language=C]
+452;  // integer
+923.00123; // floating point number
+\end{lstlisting}
+
+\subsection{Strings}
+
+We've encountered this data type multiple times, even right from the beginning in our \verb+Hello, World!+ example. These are just a sequence of characters that store typically human-readable data, such as words or sentences and often uses character encoding, which will be one of the challenges to implement later on. 
+
+\begin{lstlisting}[language=C]
+"";  // empty string
+"string"; // standard string
+\end{lstlisting}
+
+\subsection{Null}
+
+Finally we have our final built in data type, \verb+null+, which is almost indentical to its C counterpart. The null pointer is used to indicate that the pointer does not refer to a valid object. Note that normally the null pointer is not the same as an unitialised pointer, but we will be using them as one. 
+
+\section{Expressions and Statements}
+
+If data types are the bricks to our C- city, expressions and statements would be our houses. We should make a distinction between statements, which are executed, and expressions, which are evaluated. Expressions always evaluate to a value, which statements do not. However, expressions are often used as part of a larger statement.
+
+\subsection{Arithmetic}
+
+These will be familiar and are just the standard basic arithmetic operations, bar modulo. 
+
+\begin{lstlisting}[language=C]
+183 + 298; // returns 481
+901 - 873; // returns 28
+81 * 12; // returns 972 
+672 / 16; // returns 42
+\end{lstlisting}
+
+We call the number's we are computing the operations upon, the operands and the ``\verb-+-, \verb+-+, \verb+*+ or \verb+/+'' the operator. As we are performing this process with two operands, we call them binary operators. Futhermore, most of these are infix operators, except \verb+-+ which is both an prefix operator (when used for negation) and a infix operator (when used for subtraction). We also have postfix operators (which come before the operands) and misfix operators, which have more than two operands and the operators are interleaved between them. An example from C is the ``ternary'' operator, illustrated below:
+
+\begin{lstlisting}[language=C]
+condition ? thenArm : elseArm;
+\end{lstlisting}
+
+All these operators (except \verb-+-, which can be used to concatenate strings) only work on the \verb+number+ type and if any other type is fed through, a type error will be returned.
+
+\subsection{Comparison and Equality}
+
+We can make use of the \verb+boolean+ type by comparing \verb+number+ types using comparison operators. This is especially useful for iterating through loops for a set amount of time, such as if we wanted to print the first ten consecutive natural numbers. 
+
+\begin{lstlisting}[language=C]
+var a = 1;
+while (a <= 10) {
+  print a;
+  a = a + 1;
+}
+\end{lstlisting}
+
+We have four different comparison operators, listed below: 
+
+\begin{lstlisting}[language=C]
+2 < 3; // less than
+2 <= 4; // less than or equal to
+5 > 1; // greater than
+19 >= 19; // greater than or equal to 
+\end{lstlisting}
+
+We can also use equality operators to test any two different types, any this also returns a \verb+boolean+ type. For example:
+
+\begin{lstlisting}[language=C]
+1 == 2 // returns false
+"a" != "b" // returns true
+\end{lstlisting}
+
+Note that values of different types can be compared late, and can never be equivalent: 
+
+\begin{lstlisting}[language=C]
+1 == "one"; // returns false
+\end{lstlisting}
+
+Equality is also often used to test if an element already exists in a set, or to access to a value through a key.
+
+\subsection{Logical Operators}
+
+In logic, a logical operator is a logical constant which is used to connect logical formulas. Common operators include negation, disjunction, conjuction, implication and equivalence, and are interpreted as truth functions. Logical operators can be used to link zero or more statements, so one can speak about \(n\)-ary logical operators. Note that the \verb+boolean+ types, \verb+True+ and \verb+False+ are known as zero-ary operators, while negation is known as a one-ary operator, and so on. 
+
+Outside the field of computer science, where we denote this with symbols such as \verb+AND+ and \verb+NOT+, these symbols are represneted non-ambigiously with special symbols. We list them down below. 
+
+\begin{itemize}
+
+\item Negation (\verb+NOT+) – This is an operation that is intuitively interpreted as true when some proposition \(P\) is false, or not true, and false when some proposition \(P\) is false. We can denote this in formal logic as ¬\(P\) (the most common notation), \(\sim P\) or \(NP\). This is similar to how in mathematical set theory \(\setminus \) is used to indicate `not in the set of' (i.e \({\displaystyle U\setminus A}\) is the set of all members of \(U\) that are not members of \(A\)). The truth table is as follows:
+
+
+\begin{table}[h]
+{\centering
+\begin{tabular}{|c|c|}
+\hline
+\(P\) & \(\neg P\) \\ \hline
+True       & False           \\ \hline
+False      & True            \\ \hline
+\end{tabular} \par }
+\end{table}
+
+We will use the \verb+!+ character as a prefix to denote \verb+NOT+. 
+
+\begin{lstlisting}[language=C]
+!true; // returns false
+!false; // returns true
+\end{lstlisting}
+
+\item Conjunction (\verb+AND+) – This is an operator that takes two operands, say \(A\) and \(B\) and is only true when some both are true. We denote this We most often notate this as \(\wedge\) and can define it in terms of the \verb+NOT+ and \verb+OR+ functions as  \(A \wedge B = \neg(\neg A \lor \neg B) \). Below is the truth table for the \verb+AND+ operator:
+
+\begin{table}[h]
+{\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\(A\)                           & \(B\)                 & \(A \wedge B\) \\ \hline
+True                        & True                       & True       \\ \hline
+True                        & False                      & False      \\ \hline
+\multicolumn{1}{|l|}{False} & \multicolumn{1}{l|}{True}  & False      \\ \hline
+\multicolumn{1}{|l|}{False} & \multicolumn{1}{l|}{False} & False      \\ \hline
+\end{tabular} \par }
+\end{table}
+
+In C-, we'll just denote this with \verb+and+.
+
+\begin{lstlisting}[language=C]
+true and false; // returns false
+true and true;  // returns true
+\end{lstlisting} 
+
+\item Disjuntion (\verb+OR+) – This is an operator that returns \verb+True+ if either of its operands \(A\) or \(B\) are true and \verb+False+ if both \(A\) and \(B\) are false. This is typically denoted with \(\vee\) and we can define it in terms of other operators as \(A \vee B =  \neg ((\neg A) \wedge (\neg B))\). Below is the truth table:
+
+\begin{table}[h]
+{\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\(A\)                       & \(B\)                      & \(A \vee B\) \\ \hline
+True                        & True                       & True         \\ \hline
+True                        & False                      & True         \\ \hline
+\multicolumn{1}{|l|}{False} & \multicolumn{1}{l|}{True}  & True         \\ \hline
+\multicolumn{1}{|l|}{False} & \multicolumn{1}{l|}{False} & False        \\ \hline
+\end{tabular} \par }
+\end{table}
+
+In C-, we'll again just denote this with the word \verb+or+.
+
+\begin{lstlisting}[language=C]
+false or true;  // returns true
+false or false; // returns false.
+\end{lstlisting} 
+\end{itemize}
+
+In C-, and programming langauges in general \verb+and+ and \verb+or+ are more like control flow structures rather than an operator. For example, if the left operand of a \verb\or\ statement is true, the right statement is skipped, effectively causing a short circuit. 
+
+From an overview we can say that all these operations have the same associativity and precedence as in C, and that this order can be modifified with \verb+()+
+
+\subsection{Statements}
+
+Recall that statements do not evaluate to a value, unlike expressions, and instead aim to produce and effect, say by modifying a state, reading input or producing output. Again, if we go back to our \verb+Hello, World!+ example, we have created a statement as \verb+print+ evalues a single expression and displays the result. 
+
+\begin{lstlisting}[language=C]
+print "Hello, world!";
+\end{lstlisting}
+
+An expression followed by a semicolon (\verb+;+) promotes the expression to an expression statement. Furthermore, we can wrap multiple statements into where only one is expected using a block, which affects scoping. 
+
+\begin{lstlisting}[language=C]
+{
+  print "a";
+  print "b";
+}
+\end{lstlisting}
+
+\section{Variables, Loops and Functions}
+
+\subsection{Variables}
+
+We can declare variables using \verb+var+ statements, meaning we do not usually have to specify the type. If we don't include the initializer statement, the variable’s value defaults to \verb+nil+.
+
+\begin{lstlisting}[language=C]
+var a = "a"; // stores the string "a"
+var b; // stores the nil type
+\end{lstlisting}
+
+We can then access and remodify variables by calling on it's name.
+
+\begin{lstlisting}[language=C]
+var a = "b"; 
+print b; // returns "b"
+\end{lstlisting}
+
+\subsection{Loops}
+
+Loops are essential for the control flow of a program, meaning we can skip code to execute blocks of code multiple times. Although we could make use of our logical connectives \verb+and+, \verb+not+ and \verb+or+ for branching and recursion techniques for iterating through code, we feel it would be more convinient to add simple looping statements into C-. 
+
+We include three statements from the C language, starting with \verb+if+. When our interpreter finds an \verb+if+ statement, it expects a \verb+boolean+ condition, and evalues that condition. If the condition is true, then the following statements are executed, while if it is false, the nested block is skipped and the code (possibly within an \verb+else+ statement) after is executed.
+
+\begin{lstlisting}[language=C]
+if (condition) {
+  print "a";
+} else {
+  print "b";
+}
+\end{lstlisting}
+
+We can think of our next statement, the \verb+while+ loop as a set of repeated \verb+if+ statements, a control flow statement that allows code to be repeatedly executed based on some \verb+boolean+ condition. We return to our example of printing the first ten natural numbers
+
+\begin{lstlisting}[language=C]
+var a = 1;
+while (a <= 10) {
+  print a;
+  a = a + 1;
+}
+\end{lstlisting}
+
+We have decided to omit the \verb+do while+ statement, as it is similar enough to the \verb+while+ statement.
+Finally we have \verb+for+ loops, which are used mainly for iteration; running a section of code repeatedly until some condition is satisfied. Let's rewrite our code for printing the first ten natural numbers using a \verb+for+ loop.
+
+\begin{lstlisting}[language=C]
+for (var a = 1; a < 10; a = a + 1) {
+  print a;
+}
+\end{lstlisting}
+
+Some languages ikmplement a \verb+for-in+ or \verb+foreach+ loops for explicitly iterating over various sequence types, which can be handy, but we'll stick with C's standard \verb+for+ loop. 
+
+\subsection{Functions}
+
+We carry over the same syntax from C for calling functions: 
+
+\begin{lstlisting}[language=C]
+function(a, b);
+\end{lstlisting}
+
+Note that we can abstain from passing any parameters to the function, which still calls upon it, but we still need the empty parenthesis otherwise we just refer to the function. 
+
+Declaring functions can be done with \verb+fun+, similar to \verb+var+. Recall that a declaration binds the function’s type to its name so that calls can be type-checked but does not provide a body. A definition declares the function and also fills in the body so that the function can be compiled. This distinction is not very meaningful in C- because it is dynamically typed. 
+
+Although these terms are used interchangeably, we also clarify the difference between a parameter and argument. A parameter is a variable that holds the value of the argument inside the body of the function, while an argument is an actual value you pass to a function when you call it.
+
+\begin{lstlisting}[language=C]
+fun sum(a, b) {
+  return a + b;
+}
+\end{lstlisting}
+
+Note that a function body is always a block, and that a function always has to return a value, otherwise it just implicitly returns a value of the \verb+nil+ type. We can call multiple functions below, as shown below:
+
+\begin{lstlisting}[language=C]
+fun identity(a) {
+  return a;
+}
+
+print identity(sum)(a, b);
+\end{lstlisting}
+
+We can also declare functions within other functions:
+
+
+\begin{lstlisting}[language=C]
+fun global() {
+  fun local() {
+    return "a";
+  }
+
+  local();
+}
+\end{lstlisting}
+
+
+%*****************************************
+%*****************************************
+%*****************************************
+%*****************************************
+%*****************************************

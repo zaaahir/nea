@@ -39,7 +39,7 @@ class Parent
     public:  
         void base()  
         {  
-            cout << "This is the Parent class function." << endl;   
+            cout << "parent" << endl;   
         }  
 };  
   
@@ -48,7 +48,7 @@ class Child : public Parent
     public:  
         void derive()  
         {  
-            cout << "This is the Child class function." << endl;  
+            cout << "child" << endl;  
         }  
 };  
   
@@ -64,7 +64,7 @@ int main ()
     return 0;  
 }  
 
-// Outputs "This is the Child class function."
+// Outputs "child"
 \end{lstlisting}
 
 \subsection{Memory Management}
@@ -334,7 +334,7 @@ fun sum(a, b) {
 
 Note that a function body is always a block, and that a function always has to return a value, otherwise it just implicitly returns a value of the \verb+nil+ type. We can call multiple functions below, as shown below:
 
-\begin{lstlisting}[language=C]
+\begin{lstlisting}[language=python]
 fun identity(a) {
   return a;
 }
@@ -354,6 +354,57 @@ fun global() {
   local();
 }
 \end{lstlisting}
+
+Here, \verb+local()+ accesses a local variable declared outside of its body in the surrounding function, which works by \verb+local()+ holding on to references to any surrounding variables that it uses so that they stay around even after the outer function has returned. Functions, such as \verb+local()+, that do this are known as closures.
+
+\section{Classes}
+
+Classes are a key feature of \ac{OOP}, a programming paradigm based on the concept of objects, which contain data and code. This data is stored as fields (which is known as attributes or properties), and the code is in the form of procedures (known as methods). 
+
+Although most languages using \ac{OOP} such as C++, C\# and Java uses classes, we also have another possible type of objects; prototypes.
+
+In regular class-based languages, the two main ideas are classes (extensible templates for creating objects) and instances (concrete occurences of any object). Classes contain the methods and inheritance chain. To call a method on an instance, there is always a level of indirection, meaning you have look up the instance’s class and then you find the method there.
+
+Prototype-based languages merge these two concepts. There are only objects—no classes—and each individual object may contain state and methods. Objects can directly inherit (known as delegate in prototype-based languages) from each other, meaning that prototypal languages are more fundamental than classes. This also makes them a lot easier and quicker to implement and have a lot more options for abstract and unusual data patterns. 
+
+However, we find that often programming languages utilizing prototypes are less comfortable to the average user, which is an important factor for desigining C-.
+
+We can declare a class and it's methods as follows:
+
+\begin{lstlisting}[language=python]
+class a {
+  b() {
+    print "c";
+  }
+
+  d(e) {
+    print "f" + e;
+  }
+}
+\end{lstlisting}
+
+The body of a class contains its methods, which are declared like functions, but without the keyword. When the class declaration is executed, C- creates a class object and stores that in a variable named after the class. To keep things simple in C-, the class itself is a factory function for instances: 
+
+\begin{lstlisting}[language=C++]
+var a = b();
+print b; // returns the b instance
+\end{lstlisting}
+
+Classes aren't very useful by themselves, and we need to implement some sort of method to encapsulate behvaiour and state together, which can be done using the notion of fields. Like other dynamically typed languages, C- lets us freely add properties onto objects. 
+
+If we want to access a field or method on the current object from within a method we can use the \verb+this+ statement. Note that assigning to a field creates it if it doesn't already exist.
+
+\begin{lstlisting}[language=python]
+class a{
+  b(c) {
+    print this.d;
+  }
+}
+\end{lstlisting}
+
+Part of encapsulating data within an object is ensuring the object is in a valid state when it’s created, which can be done by defining an initializer, \verb+init()+. Any parameters passed to the class are forwarded to its initializer and it is called automatically when the object is constructed.
+
+
 
 
 %*****************************************

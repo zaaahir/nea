@@ -36,6 +36,7 @@
 \contentsline {subsection}{\numberline {2.3.1}Variables}{19}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Loops}{19}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Functions}{20}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Classes}{21}{section.2.4}%
 \contentsline {part}{\numberline {ii}\spacedlowsmallcaps {Appendix}}{23}{part.2}%
 \contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Appendix Test}}{25}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Appendix Section Test}{25}{section.A.1}%

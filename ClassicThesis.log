@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.4)  23 SEP 2023 12:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.4)  23 SEP 2023 21:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1522,6 +1522,10 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 ]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+
+[12]
 Package tocbasic Info: character protrusion at lof deactivated on input line 31
 .
  (./classicthesis.lof)
@@ -1540,28 +1544,33 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 42
 
 
 
-LaTeX Warning: Hyper reference `acro:GC' on page xii undefined on input line 67
-.
+LaTeX Warning: Hyper reference `acro:GC' on page xiii undefined on input line 6
+7.
 
 
-LaTeX Warning: Hyper reference `acro:GC' on page xii undefined on input line 67
-.
+LaTeX Warning: Hyper reference `acro:GC' on page xiii undefined on input line 6
+7.
 
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-[12
+[13
+
+]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+
+[14
+
+
+
 
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 [1
-
-
-
-
 
 
 
@@ -1637,7 +1646,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 [9]
-<gfx/transpiler.png, id=277, 1008.76875pt x 753.81625pt>
+<gfx/transpiler.png, id=291, 1008.76875pt x 753.81625pt>
 File: gfx/transpiler.png Graphic file (type png)
 <use gfx/transpiler.png>
 Package pdftex.def Info: gfx/transpiler.png  used on input line 159.
@@ -1667,7 +1676,7 @@ Overfull \hbox (9.04492pt too wide) in paragraph at lines 189--190
 -tions is CPython,
  []
 
-<gfx/venn.png, id=294, 1195.46625pt x 840.13875pt>
+<gfx/venn.png, id=309, 1195.46625pt x 840.13875pt>
 File: gfx/venn.png Graphic file (type png)
 <use gfx/venn.png>
 Package pdftex.def Info: gfx/venn.png  used on input line 193.
@@ -1725,24 +1734,28 @@ Overfull \vbox (5.71458pt too high) has occurred while \output is active []
 Overfull \vbox (5.71458pt too high) has occurred while \output is active []
 
 
-[20])
+[20] (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+Package acronym Info: Label `acro:OOP' newly defined as it shall be overridden
+although it is yet undefined on input line 362.
+
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-[21]
+[21])
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-[22
-
-
-
-
-]
+[22]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 [23
+
+
+
+
 
 
 ]
@@ -2016,6 +2029,7 @@ lstlang1.sty    2020/03/24 1.8d listings language file
 gfx/transpiler.png
 gfx/venn.png
 Chapter02.tex
+lstlang1.sty    2020/03/24 1.8d listings language file
 Chapters/Chapter0A.tex
 lstlang1.sty    2020/03/24 1.8d listings language file
 FrontBackmatter/Bibliography.tex
@@ -2033,10 +2047,10 @@ Package logreq Info: Writing requests to 'classicthesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33333 strings out of 478268
- 631130 string characters out of 5846348
- 1566233 words of memory out of 5000000
- 50609 multiletter control sequences out of 15000+600000
+ 33490 strings out of 478268
+ 632764 string characters out of 5846348
+ 1552846 words of memory out of 5000000
+ 50740 multiletter control sequences out of 15000+600000
  558363 words of font info for 157 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,23n,106p,10608b,2367s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2055,10 +2069,10 @@ ve/2022/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2022/
 texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2022/texmf-d
 ist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2022/texmf-dist/fon
 ts/type1/urw/palatino/uplri8a.pfb>
-Output written on classicthesis.pdf (43 pages, 580726 bytes).
+Output written on classicthesis.pdf (45 pages, 585047 bytes).
 PDF statistics:
- 816 PDF objects out of 1000 (max. 8388607)
- 729 compressed objects within 8 object streams
- 289 named destinations out of 1000 (max. 500000)
- 24992 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 858 PDF objects out of 1000 (max. 8388607)
+ 769 compressed objects within 8 object streams
+ 313 named destinations out of 1000 (max. 500000)
+ 25000 words of extra memory for PDF output out of 29859 (max. 10000000)
 

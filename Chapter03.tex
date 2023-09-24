@@ -215,12 +215,32 @@ The two size arguments provided to \verb.reallocate(). dictate the specific oper
 \hline
 \rowcolor[HTML]{EFEFEF} 
 \verb.oldSize. & \verb.newSize.              & Operation                  \\ \hline
-0              & Non-Zero                    & Allocate new block         \\ \hline
-Non-Zero       & 0                           & Free allocation            \\ \hline
-Non-Zero       & Smaller than \verb.oldSize. & Shrink existing allocation \\ \hline
+0              & Non-zero                    & Allocate new block         \\ \hline
+Non-zero       & 0                           & Free allocation            \\ \hline
+Non-zero       & Smaller than \verb.oldSize. & Shrink existing allocation \\ \hline
 Non-zero       & Larger than \verb.oldSize.  & Grow existing allocation   \\ \hline
 \end{tabular} \par}
 \end{table}
+
+Although this looks like a lot of different cases to consider for, the implementation is quite simple. We'lll add this to a new file \verb,memory.c,
+
+\begin{lstlisting}[language=C]
+// memory.c
+
+#include <stdlib.h>
+
+#include "memory.h"
+
+void* reallocate(void* pointer, size_t oldSize, size_t newSize) {
+  if (newSize == 0) {
+    free(pointer);
+    return NULL;
+  }
+
+  void* result = realloc(pointer, newSize);
+  return result;
+}
+\end{lstlisting}
 
 
 %*****************************************

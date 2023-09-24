@@ -1,6 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2022)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: classicthesis.aux
+The top-level auxiliary file: ClassicThesis.aux
 The style file: biblatex.bst
 A level-1 auxiliary file: FrontBackmatter/DirtyTitlepage.aux
 A level-1 auxiliary file: FrontBackmatter/Titlepage.aux
@@ -11,6 +11,7 @@ A level-1 auxiliary file: FrontBackmatter/Contents.aux
 A level-1 auxiliary file: Chapter01.aux
 A level-1 auxiliary file: Chapter02.aux
 A level-1 auxiliary file: Chapter03.aux
+A level-1 auxiliary file: Chapters/Chapter0A.aux
 A level-1 auxiliary file: FrontBackmatter/Bibliography.aux
 A level-1 auxiliary file: FrontBackmatter/Declaration.aux
 A level-1 auxiliary file: FrontBackmatter/Colophon.aux
@@ -29,7 +30,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: classicthesis-blx.bib
+Database file #1: ClassicThesis-blx.bib
 Database file #2: Bibliography.bib
 Database file #3: AMiede_Publications.bib
 Biblatex version: 3.17
@@ -37,7 +38,7 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 1 entry,
             6399 wiz_defined-function locations,
-            1216 strings with 9325 characters,
+            1217 strings with 9347 characters,
 and the built_in function-call counts, 1550 in all, are:
 = -- 73
 > -- 73

@@ -44,6 +44,9 @@
 \contentsline {section}{\numberline {3.2}Why Bytecode?}{27}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Laying the Foundation}{28}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Dynamic Arrays}{29}{subsection.3.3.1}%
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Appendix Test}}{33}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Appendix Section Test}{33}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Another Appendix Section Test}{33}{section.4.2}%
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{33}{dummy.7}%
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{35}{dummy.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

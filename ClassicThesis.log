@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.4)  24 SEP 2023 13:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.4)  24 SEP 2023 16:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**classicthesis.tex
-(./classicthesis.tex
+**ClassicThesis.tex
+(./ClassicThesis.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24>
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/fix-cm.sty
@@ -1189,13 +1189,14 @@ LaTeX Font Info:    Trying to load font information for T1+pplj on input line 5
  (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/t1pplj.fd
 File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
 )
-(./classicthesis.aux (./FrontBackmatter/DirtyTitlepage.aux)
+(./ClassicThesis.aux (./FrontBackmatter/DirtyTitlepage.aux)
 (./FrontBackmatter/Titlepage.aux) (./FrontBackmatter/Titleback.aux)
 (./FrontBackmatter/Dedication.aux) (./FrontBackmatter/Abstract.aux)
 (./FrontBackmatter/Contents.aux) (./Chapter01.aux) (./Chapter02.aux)
-(./Chapter03.aux) (./FrontBackmatter/Bibliography.aux)
-(./FrontBackmatter/Declaration.aux) (./FrontBackmatter/Colophon.aux))
-\openout1 = `classicthesis.aux'.
+(./Chapter03.aux) (./Chapters/Chapter0A.aux)
+(./FrontBackmatter/Bibliography.aux) (./FrontBackmatter/Declaration.aux)
+(./FrontBackmatter/Colophon.aux))
+\openout1 = `ClassicThesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
 LaTeX Font Info:    ... okay on input line 55.
@@ -1258,12 +1259,12 @@ Package biblatex Info: Data encoding 'ascii' specified.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Data encoding 'ascii' specified.
 (biblatex)             No need to reencode data.
-\openout3 = `classicthesis-blx.bib'.
+\openout3 = `ClassicThesis-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'classicthesis.bbl' found.
+Package biblatex Info: ... file 'ClassicThesis.bbl' found.
 
-(./classicthesis.bbl)
+(./ClassicThesis.bbl)
 Package biblatex Info: Reference section=0 on input line 55.
 Package biblatex Info: Reference segment=0 on input line 55.
 Package caption Info: Begin \AtBeginDocument code.
@@ -1291,9 +1292,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 55.
 LaTeX Info: Redefining \pageref on input line 55.
 LaTeX Info: Redefining \nameref on input line 55.
- (./classicthesis.out) (./classicthesis.out)
+ (./ClassicThesis.out) (./ClassicThesis.out)
 \@outlinefile=\write4
-\openout4 = `classicthesis.out'.
+\openout4 = `ClassicThesis.out'.
 
 Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           Using `bookmark' together with `hyperref' is recommended,
@@ -1494,7 +1495,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
  (./FrontBackmatter/Contents.tex
 Package tocbasic Info: character protrusion at toc deactivated on input line 11
 .
- (./classicthesis.toc
+ (./ClassicThesis.toc
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -1508,7 +1509,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 ])
 \tf@toc=\write5
-\openout5 = `classicthesis.toc'.
+\openout5 = `ClassicThesis.toc'.
 
 
 1: section
@@ -1522,19 +1523,22 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 [10]
 Package tocbasic Info: character protrusion at lof deactivated on input line 31
 .
- (./classicthesis.lof)
+ (./ClassicThesis.lof)
 \tf@lof=\write6
-\openout6 = `classicthesis.lof'.
+\openout6 = `ClassicThesis.lof'.
 
 Package tocbasic Info: character protrusion at lot deactivated on input line 42
 .
- (./classicthesis.lot)
+ (./ClassicThesis.lot)
 \tf@lot=\write7
-\openout7 = `classicthesis.lot'.
+\openout7 = `ClassicThesis.lot'.
 
- (./classicthesis.lol)
+ (./ClassicThesis.lol
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.30756pt on input line 8.
+)
 \tf@lol=\write8
-\openout8 = `classicthesis.lol'.
+\openout8 = `ClassicThesis.lol'.
 
 
 
@@ -1590,10 +1594,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 
-]
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.30756pt on input line 21.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
+] (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -1643,7 +1644,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 [9]
-<gfx/transpiler.png, id=282, 1008.76875pt x 753.81625pt>
+<gfx/transpiler.png, id=292, 1008.76875pt x 753.81625pt>
 File: gfx/transpiler.png Graphic file (type png)
 <use gfx/transpiler.png>
 Package pdftex.def Info: gfx/transpiler.png  used on input line 159.
@@ -1673,7 +1674,7 @@ Overfull \hbox (9.04492pt too wide) in paragraph at lines 189--190
 -tions is CPython,
  []
 
-<gfx/venn.png, id=299, 1195.46625pt x 840.13875pt>
+<gfx/venn.png, id=309, 1195.46625pt x 840.13875pt>
 File: gfx/venn.png Graphic file (type png)
 <use gfx/venn.png>
 Package pdftex.def Info: gfx/venn.png  used on input line 193.
@@ -1784,7 +1785,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 ]
-<gfx/process.png, id=542, 623.32875pt x 886.31125pt>
+<gfx/process.png, id=552, 623.32875pt x 886.31125pt>
 File: gfx/process.png Graphic file (type png)
 <use gfx/process.png>
 Package pdftex.def Info: gfx/process.png  used on input line 32.
@@ -1810,26 +1811,26 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 [32]
-\openout2 = `FrontBackmatter/Bibliography.aux'.
+\openout2 = `Chapters/Chapter0A.aux'.
 
- (./FrontBackmatter/Bibliography.tex)
+ (./Chapters/Chapter0A.tex
+chapter 4.
 
-LaTeX Warning: Empty bibliography on input line 12.
+Overfull \hbox (1.02399pt too wide) in paragraph at lines 7--13
+\T1/pplj/m/n/10.95 clu-daturque. Al-bu-cius ap-pel-lan-tur de-ter-ruis-set id e
+am, viven-dum par-
+ []
 
-\openout2 = `FrontBackmatter/Declaration.aux'.
-
-(./FrontBackmatter/Declaration.tex)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 62.
+)
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 [33
-
-
-
-
-
-
-
 
 
 
@@ -1845,20 +1846,52 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 ]
+\openout2 = `FrontBackmatter/Bibliography.aux'.
+
+ (./FrontBackmatter/Bibliography.tex)
+
+LaTeX Warning: Empty bibliography on input line 12.
+
+\openout2 = `FrontBackmatter/Declaration.aux'.
+
+(./FrontBackmatter/Declaration.tex)
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+
+[35
+
+
+
+
+
+
+
+
+]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+
+[36
+
+
+
+
+]
 \openout2 = `FrontBackmatter/Colophon.aux'.
 
  (./FrontBackmatter/Colophon.tex)
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-[35
+[37
 
-] (./classicthesis.aux (./FrontBackmatter/DirtyTitlepage.aux)
+] (./ClassicThesis.aux (./FrontBackmatter/DirtyTitlepage.aux)
 (./FrontBackmatter/Titlepage.aux) (./FrontBackmatter/Titleback.aux)
 (./FrontBackmatter/Dedication.aux) (./FrontBackmatter/Abstract.aux)
 (./FrontBackmatter/Contents.aux) (./Chapter01.aux) (./Chapter02.aux)
-(./Chapter03.aux) (./FrontBackmatter/Bibliography.aux)
-(./FrontBackmatter/Declaration.aux) (./FrontBackmatter/Colophon.aux))
+(./Chapter03.aux) (./Chapters/Chapter0A.aux)
+(./FrontBackmatter/Bibliography.aux) (./FrontBackmatter/Declaration.aux)
+(./FrontBackmatter/Colophon.aux))
 
  *File List*
   fix-cm.sty    2020/11/24 v1.1t fixes to LaTeX
@@ -2006,12 +2039,12 @@ remreset.sty
 american.lbx    2022/02/02 v3.17 biblatex localization (PK/MW)
   german.lbx    2022/02/02 v3.17 biblatex localization (PK/MW)
  ngerman.lbx    2022/02/02 v3.17 biblatex localization (PK/MW)
-classicthesis.bbl
+ClassicThesis.bbl
  nameref.sty    2021-04-02 v2.47 Cross-referencing by name of section
 refcount.sty    2019/12/15 v3.6 Data extraction from label references (HO)
 gettitlestring.sty    2019/12/15 v1.6 Cleanup title references (HO)
-classicthesis.out
-classicthesis.out
+ClassicThesis.out
+ClassicThesis.out
 bookmark.sty    2020-11-06 v1.29 PDF bookmarks (HO)
 bkm-pdftex.def    2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 supp-pdf.mkii
@@ -2045,6 +2078,8 @@ lstlang1.sty    2020/03/24 1.8d listings language file
 lstlang2.sty    2020/03/24 1.8d listings language file
 Chapter03.tex
 gfx/process.png
+Chapters/Chapter0A.tex
+lstlang1.sty    2020/03/24 1.8d listings language file
 FrontBackmatter/Bibliography.tex
 FrontBackmatter/Declaration.tex
 FrontBackmatter/Colophon.tex
@@ -2053,18 +2088,18 @@ FrontBackmatter/Colophon.tex
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `classicthesis.out' has not changed.
+Package rerunfilecheck Info: File `ClassicThesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package logreq Info: Writing requests to 'classicthesis.run.xml'.
-\openout1 = `classicthesis.run.xml'.
+Package logreq Info: Writing requests to 'ClassicThesis.run.xml'.
+\openout1 = `ClassicThesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33566 strings out of 478268
- 631830 string characters out of 5846348
- 1565239 words of memory out of 5000000
- 50714 multiletter control sequences out of 15000+600000
- 550791 words of font info for 145 fonts, out of 8000000 for 9000
+ 33725 strings out of 478268
+ 634404 string characters out of 5846348
+ 1569891 words of memory out of 5000000
+ 50831 multiletter control sequences out of 15000+600000
+ 553516 words of font info for 149 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,23n,106p,10608b,2383s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -2082,10 +2117,10 @@ ve/2022/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2022/
 texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2022/texmf-d
 ist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2022/texmf-dist/fon
 ts/type1/urw/palatino/uplri8a.pfb>
-Output written on classicthesis.pdf (47 pages, 682725 bytes).
+Output written on ClassicThesis.pdf (49 pages, 687909 bytes).
 PDF statistics:
- 998 PDF objects out of 1000 (max. 8388607)
- 903 compressed objects within 10 object streams
- 418 named destinations out of 1000 (max. 500000)
- 23485 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 1056 PDF objects out of 1200 (max. 8388607)
+ 959 compressed objects within 10 object streams
+ 446 named destinations out of 1000 (max. 500000)
+ 24021 words of extra memory for PDF output out of 24883 (max. 10000000)
 

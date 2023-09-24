@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.4)  24 SEP 2023 10:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.4)  24 SEP 2023 13:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -892,6 +892,23 @@ Package hyperref Info: Option `hypertexnames' set `true' on input line 195.
 Package: classicthesis 2015/09/06 v4.2 Typographic style for a classic-looking 
 thesis
 
+(/usr/local/texlive/2022/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count442
+\float@exts=\toks29
+\float@box=\box59
+\@float@everytoks=\toks30
+\@floatcapt=\box60
+)
+Package scrhack Info: loading float hack on input line 46.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/koma-script/float.hak
+File: float.hak 2021/11/13 v3.35 KOMA-Script scrhack part (hacking package floa
+t)
+Package scrhack Info: redefining \newfloat on input line 163.
+Package scrhack Info: redefining \listof on input line 163.
+Package scrhack Info: undefining \float@addtolists on input line 163.
+)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 )
@@ -905,6 +922,13 @@ Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks31
+\minrowclearance=\skip98
+)
+\rownum=\count443
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
 Package xcolor Info: Model `RGB' extended on input line 1368.
@@ -930,30 +954,30 @@ Package: eulervm 2005/01/11 v4.0 (WaS)
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2022/03/14 v3.0d Micro-typographical refinements (RS)
-\MT@toks=\toks29
-\MT@tempbox=\box59
-\MT@count=\count442
+\MT@toks=\toks32
+\MT@tempbox=\box61
+\MT@count=\count444
 LaTeX Info: Redefining \noprotrusionifhmode on input line 1027.
 LaTeX Info: Redefining \leftprotrusion on input line 1028.
 LaTeX Info: Redefining \rightprotrusion on input line 1036.
 LaTeX Info: Redefining \textls on input line 1195.
 \MT@outer@kern=\dimen175
 LaTeX Info: Redefining \textmicrotypecontext on input line 1781.
-\MT@listname@count=\count443
+\MT@listname@count=\count445
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2022/03/14 v3.0d Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 900.
 LaTeX Info: Redefining \lslig on input line 900.
-\MT@outer@space=\skip98
+\MT@outer@space=\skip99
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2022/03/14 v3.0d microtype main configuration file (RS)
 ))
-Package classicthesis Info: A4 paper, Palatino or other on input line 272.
+Package classicthesis Info: A4 paper, Palatino or other on input line 273.
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = areaset
 (typearea)             BCOR = 14.22636pt
@@ -969,7 +993,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.60002pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 272.
+(typearea)              on input line 273.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
@@ -983,19 +1007,19 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen183
 \cmidrulekern=\dimen184
 \defaultaddspace=\dimen185
-\@cmidla=\count444
-\@cmidlb=\count445
+\@cmidla=\count446
+\@cmidlb=\count447
 \@aboverulesep=\dimen186
 \@belowrulesep=\dimen187
-\@thisruleclass=\count446
-\@lastruleclass=\count447
+\@thisruleclass=\count448
+\@lastruleclass=\count449
 \@thisrulewidth=\dimen188
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
 )
 Package classicthesis Info: Using pdftex/microtype for character spacing.Make s
-ure your pdftex is version 1.40 or higher. on input line 345.
+ure your pdftex is version 1.40 or higher. on input line 346.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
 Package: scrlayer-scrpage 2021/11/13 v3.35 KOMA-Script package (end user interf
@@ -1024,16 +1048,16 @@ Package scrlayer-scrpage Info: auto-selection of `pagestyleset=KOMA-Script'.
 
 Package scrlayer-scrpage Warning: replacing deprecated \clearscrheading by
 (scrlayer-scrpage)                \clearmainofpairofpagestyles on input line 35
-4.
+5.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
-\ttl@box=\box60
-\beforetitleunit=\skip99
-\aftertitleunit=\skip100
+\ttl@box=\box62
+\beforetitleunit=\skip100
+\aftertitleunit=\skip101
 \ttl@plus=\dimen189
 \ttl@minus=\dimen190
-\ttl@toksa=\toks30
+\ttl@toksa=\toks33
 \titlewidth=\dimen191
 \titlewidthlast=\dimen192
 \titlewidthfirst=\dimen193
@@ -1060,7 +1084,7 @@ Package titlesec Warning: Non standard sectioning command \subparagraph
 
 )
 Class scrreprt Info: Unknown `titesec' release.
-(scrreprt)           Cross your fingers, that is compatible on input line 378.
+(scrreprt)           Cross your fingers, that is compatible on input line 379.
 
 
 Class scrreprt Warning: Usage of package `tocloft' together
@@ -1081,67 +1105,67 @@ Class scrreprt Warning: Usage of package `tocloft' together
 (scrreprt)              `part', `section', `subsection',
 (scrreprt)              `subsubsection', `paragraph' and `subparagraph'.
 (scrreprt)              Nevertheless, using requested
-(scrreprt)              package `tocloft' on input line 427.
+(scrreprt)              package `tocloft' on input line 428.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
-\cftparskip=\skip101
-\cftbeforetoctitleskip=\skip102
-\cftaftertoctitleskip=\skip103
-\cftbeforepartskip=\skip104
-\cftpartnumwidth=\skip105
-\cftpartindent=\skip106
-\cftbeforechapskip=\skip107
-\cftchapindent=\skip108
-\cftchapnumwidth=\skip109
-\cftbeforesecskip=\skip110
-\cftsecindent=\skip111
-\cftsecnumwidth=\skip112
-\cftbeforesubsecskip=\skip113
-\cftsubsecindent=\skip114
-\cftsubsecnumwidth=\skip115
-\cftbeforesubsubsecskip=\skip116
-\cftsubsubsecindent=\skip117
-\cftsubsubsecnumwidth=\skip118
-\cftbeforeparaskip=\skip119
-\cftparaindent=\skip120
-\cftparanumwidth=\skip121
-\cftbeforesubparaskip=\skip122
-\cftsubparaindent=\skip123
-\cftsubparanumwidth=\skip124
-\cftbeforeloftitleskip=\skip125
-\cftafterloftitleskip=\skip126
-\cftbeforefigskip=\skip127
-\cftfigindent=\skip128
-\cftfignumwidth=\skip129
-\cftbeforelottitleskip=\skip130
-\cftafterlottitleskip=\skip131
-\cftbeforetabskip=\skip132
-\cfttabindent=\skip133
-\cfttabnumwidth=\skip134
-\cftbeforesubfigskip=\skip135
-\cftsubfigindent=\skip136
-\cftsubfignumwidth=\skip137
-\cftbeforesubtabskip=\skip138
-\cftsubtabindent=\skip139
-\cftsubtabnumwidth=\skip140
+\cftparskip=\skip102
+\cftbeforetoctitleskip=\skip103
+\cftaftertoctitleskip=\skip104
+\cftbeforepartskip=\skip105
+\cftpartnumwidth=\skip106
+\cftpartindent=\skip107
+\cftbeforechapskip=\skip108
+\cftchapindent=\skip109
+\cftchapnumwidth=\skip110
+\cftbeforesecskip=\skip111
+\cftsecindent=\skip112
+\cftsecnumwidth=\skip113
+\cftbeforesubsecskip=\skip114
+\cftsubsecindent=\skip115
+\cftsubsecnumwidth=\skip116
+\cftbeforesubsubsecskip=\skip117
+\cftsubsubsecindent=\skip118
+\cftsubsubsecnumwidth=\skip119
+\cftbeforeparaskip=\skip120
+\cftparaindent=\skip121
+\cftparanumwidth=\skip122
+\cftbeforesubparaskip=\skip123
+\cftsubparaindent=\skip124
+\cftsubparanumwidth=\skip125
+\cftbeforeloftitleskip=\skip126
+\cftafterloftitleskip=\skip127
+\cftbeforefigskip=\skip128
+\cftfigindent=\skip129
+\cftfignumwidth=\skip130
+\cftbeforelottitleskip=\skip131
+\cftafterlottitleskip=\skip132
+\cftbeforetabskip=\skip133
+\cfttabindent=\skip134
+\cfttabnumwidth=\skip135
+\cftbeforesubfigskip=\skip136
+\cftsubfigindent=\skip137
+\cftsubfignumwidth=\skip138
+\cftbeforesubtabskip=\skip139
+\cftsubtabindent=\skip140
+\cftsubtabnumwidth=\skip141
 )
-\newnumberwidth=\skip141
-\beforebibskip=\skip142
-\newchnumberwidth=\skip143
-\figurelabelwidth=\skip144
-\tablelabelwidth=\skip145
-\c@listings=\count448
-\cftbeforelistingsskip=\skip146
-\cftlistingsindent=\skip147
-\cftlistingsnumwidth=\skip148
-\c@loldepth=\count449
-\cftbeforeloltitleskip=\skip149
-\cftafterloltitleskip=\skip150
-\listingslabelwidth=\skip151
+\newnumberwidth=\skip142
+\beforebibskip=\skip143
+\newchnumberwidth=\skip144
+\figurelabelwidth=\skip145
+\tablelabelwidth=\skip146
+\c@listings=\count450
+\cftbeforelistingsskip=\skip147
+\cftlistingsindent=\skip148
+\cftlistingsnumwidth=\skip149
+\c@loldepth=\count451
+\cftbeforeloltitleskip=\skip150
+\cftafterloltitleskip=\skip151
+\listingslabelwidth=\skip152
 Class scrreprt Info: Using old \@makefntext due to compatibility level
-(scrreprt)           less than 3.22 on input line 674.
+(scrreprt)           less than 3.22 on input line 675.
 
 Using KOMA-command "deffootnote" for footnote setup
 (/usr/local/texlive/2022/texmf-dist/tex/latex/koma-script/scrtime.sty
@@ -1244,10 +1268,11 @@ Package biblatex Info: Reference section=0 on input line 55.
 Package biblatex Info: Reference segment=0 on input line 55.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count450
+\c@lstlisting=\count452
 Package scrhack Info: undefining \float@addtolists on input line 55.
 Package hyperref Info: Link coloring ON on input line 55.
 
@@ -1261,7 +1286,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count451
+\c@section@level=\count453
 )
 LaTeX Info: Redefining \ref on input line 55.
 LaTeX Info: Redefining \pageref on input line 55.
@@ -1284,21 +1309,21 @@ Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count452
+\BKM@id=\count454
 ))
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count453
+\scratchcounter=\count455
 \scratchdimen=\dimen194
-\scratchbox=\box61
-\nofMPsegments=\count454
-\nofMParguments=\count455
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count456
+\scratchbox=\box63
+\nofMPsegments=\count456
+\nofMParguments=\count457
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count458
 \MPscratchDim=\dimen195
-\MPnumerator=\count457
-\makeMPintoPDFobject=\count458
-\everyMPtoPDFconversion=\toks32
+\MPnumerator=\count459
+\makeMPintoPDFobject=\count460
+\everyMPtoPDFconversion=\toks35
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1473,7 +1498,15 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 11
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-)
+
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+
+[9
+
+
+
+])
 \tf@toc=\write5
 \openout5 = `classicthesis.toc'.
 
@@ -1483,14 +1516,6 @@ Package microtype Info: Character `029' is missing
 1: chapter
 1: section
 
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
-
-[9
-
-
-
-]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
@@ -1618,7 +1643,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 [9]
-<gfx/transpiler.png, id=274, 1008.76875pt x 753.81625pt>
+<gfx/transpiler.png, id=282, 1008.76875pt x 753.81625pt>
 File: gfx/transpiler.png Graphic file (type png)
 <use gfx/transpiler.png>
 Package pdftex.def Info: gfx/transpiler.png  used on input line 159.
@@ -1648,7 +1673,7 @@ Overfull \hbox (9.04492pt too wide) in paragraph at lines 189--190
 -tions is CPython,
  []
 
-<gfx/venn.png, id=291, 1195.46625pt x 840.13875pt>
+<gfx/venn.png, id=299, 1195.46625pt x 840.13875pt>
 File: gfx/venn.png Graphic file (type png)
 <use gfx/venn.png>
 Package pdftex.def Info: gfx/venn.png  used on input line 193.
@@ -1689,7 +1714,7 @@ Overfull \vbox (5.71458pt too high) has occurred while \output is active []
 
 
 [17]
-Overfull \hbox (17.95422pt too wide) in paragraph at lines 248--249
+Overfull \hbox (17.95422pt too wide) in paragraph at lines 251--252
 \T1/pplj/m/n/10.95 ing in-put or pro-duc-ing out-put. Again, if we go back to o
 ur [][]\T1/fvm/m/n/10.95 Hello, World!
  []
@@ -1710,7 +1735,7 @@ Overfull \vbox (5.71458pt too high) has occurred while \output is active []
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 Package acronym Info: Label `acro:OOP' newly defined as it shall be overridden
-although it is yet undefined on input line 363.
+although it is yet undefined on input line 366.
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
@@ -1750,7 +1775,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  (./Chapter03.tex
 chapter 3.
-)
+
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
@@ -1759,15 +1784,32 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 ]
+<gfx/process.png, id=542, 623.32875pt x 886.31125pt>
+File: gfx/process.png Graphic file (type png)
+<use gfx/process.png>
+Package pdftex.def Info: gfx/process.png  used on input line 32.
+(pdftex.def)             Requested size: 117.60205pt x 167.21077pt.
+
+Overfull \vbox (5.71458pt too high) has occurred while \output is active []
+
+
+[28 <./gfx/process.png>]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-[28
+[29]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
+[30]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-]
+[31])
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+
+[32]
 \openout2 = `FrontBackmatter/Bibliography.aux'.
 
  (./FrontBackmatter/Bibliography.tex)
@@ -1780,7 +1822,11 @@ LaTeX Warning: Empty bibliography on input line 12.
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-[29
+[33
+
+
+
+
 
 
 
@@ -1793,7 +1839,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-[30
+[34
 
 
 
@@ -1805,7 +1851,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-[31
+[35
 
 ] (./classicthesis.aux (./FrontBackmatter/DirtyTitlepage.aux)
 (./FrontBackmatter/Titlepage.aux) (./FrontBackmatter/Titleback.aux)
@@ -1929,10 +1975,14 @@ graphics.cfg    2016/06/04 v1.11 sample graphics configuration
   pdftex.def    2020/10/05 v1.2a Graphics/color driver for pdftex
 classicthesis.sty    2015/09/06 v4.2 Typographic style for a classic-looking th
 esis
+   float.sty    2001/11/08 v1.3d Float enhancements (AL)
+   float.hak    2021/11/13 v3.35 KOMA-Script scrhack part (hacking package floa
+t)
    ifpdf.sty    2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
  ifxetex.sty    2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
   xcolor.sty    2021/10/31 v2.13 LaTeX color extensions (UK)
    color.cfg    2016/01/02 v1.6 sample color configuration
+colortbl.sty    2020/01/04 v1.0e Color table columns (DPC)
 dvipsnam.def    2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 mathpazo.sty    2020/03/25 PSNFSS-v9.3 Palatino w/ Pazo Math (D.Puga, WaS) 
 beramono.sty    2004/01/31 (WaS)
@@ -1994,6 +2044,7 @@ lstlang1.sty    2020/03/24 1.8d listings language file
 lstlang1.sty    2020/03/24 1.8d listings language file
 lstlang2.sty    2020/03/24 1.8d listings language file
 Chapter03.tex
+gfx/process.png
 FrontBackmatter/Bibliography.tex
 FrontBackmatter/Declaration.tex
 FrontBackmatter/Colophon.tex
@@ -2009,13 +2060,13 @@ Package logreq Info: Writing requests to 'classicthesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33197 strings out of 478268
- 626235 string characters out of 5846348
- 1548186 words of memory out of 5000000
- 50465 multiletter control sequences out of 15000+600000
+ 33566 strings out of 478268
+ 631830 string characters out of 5846348
+ 1565239 words of memory out of 5000000
+ 50714 multiletter control sequences out of 15000+600000
  550791 words of font info for 145 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,23n,106p,10608b,2367s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,23n,106p,10608b,2383s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/euex10.pfb></usr/local/
@@ -2031,10 +2082,10 @@ ve/2022/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2022/
 texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2022/texmf-d
 ist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2022/texmf-dist/fon
 ts/type1/urw/palatino/uplri8a.pfb>
-Output written on classicthesis.pdf (43 pages, 584641 bytes).
+Output written on classicthesis.pdf (47 pages, 682725 bytes).
 PDF statistics:
- 838 PDF objects out of 1000 (max. 8388607)
- 751 compressed objects within 8 object streams
- 309 named destinations out of 1000 (max. 500000)
- 23456 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 998 PDF objects out of 1000 (max. 8388607)
+ 903 compressed objects within 10 object streams
+ 418 named destinations out of 1000 (max. 500000)
+ 23485 words of extra memory for PDF output out of 24883 (max. 10000000)
 

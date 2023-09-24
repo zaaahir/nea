@@ -40,7 +40,10 @@
 \contentsline {section}{\numberline {2.5}The Standard Library}{23}{section.2.5}%
 \contentsline {part}{\numberline {ii}\spacedlowsmallcaps {Analysis}}{25}{part.2}%
 \contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {A Bytecode Implementation}}{27}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Why Bytecode?}{27}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Why not AST?}{27}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Why Bytecode?}{27}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Laying the Foundation}{28}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Dynamic Arrays}{29}{subsection.3.3.1}%
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{29}{dummy.7}%
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{33}{dummy.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.4)  23 SEP 2023 21:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.4)  24 SEP 2023 10:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1168,10 +1168,9 @@ File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
 (./classicthesis.aux (./FrontBackmatter/DirtyTitlepage.aux)
 (./FrontBackmatter/Titlepage.aux) (./FrontBackmatter/Titleback.aux)
 (./FrontBackmatter/Dedication.aux) (./FrontBackmatter/Abstract.aux)
-(./FrontBackmatter/Acknowledgments.aux) (./FrontBackmatter/Contents.aux)
-(./Chapter01.aux) (./Chapter02.aux) (./Chapters/Chapter0A.aux)
-(./FrontBackmatter/Bibliography.aux) (./FrontBackmatter/Declaration.aux)
-(./FrontBackmatter/Colophon.aux))
+(./FrontBackmatter/Contents.aux) (./Chapter01.aux) (./Chapter02.aux)
+(./Chapter03.aux) (./FrontBackmatter/Bibliography.aux)
+(./FrontBackmatter/Declaration.aux) (./FrontBackmatter/Colophon.aux))
 \openout1 = `classicthesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
@@ -1449,10 +1448,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 ]
 \openout2 = `FrontBackmatter/Abstract.aux'.
 
- (./FrontBackmatter/Abstract.tex
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.30756pt on input line 15.
-)
+ (./FrontBackmatter/Abstract.tex)
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
@@ -1463,33 +1459,6 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 [8
-
-
-
-
-]
-\openout2 = `FrontBackmatter/Acknowledgments.aux'.
-
- (./FrontBackmatter/Acknowledgments.tex
-LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/pplj/m/it' tried instead on input line 6.
-
-Overfull \hbox (2.90268pt too wide) in paragraph at lines 27--37
-[]\T1/pplj/m/n/10.95 Regarding the ty-pog-ra-phy and other help, many thanks go
- to Marco
- []
-
-)
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
-
-[9
-
-]
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
-
-[10
 
 
 
@@ -1517,7 +1486,7 @@ Package microtype Info: Character `029' is missing
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-[11
+[9
 
 
 
@@ -1525,7 +1494,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-[12]
+[10]
 Package tocbasic Info: character protrusion at lof deactivated on input line 31
 .
  (./classicthesis.lof)
@@ -1544,24 +1513,24 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 42
 
 
 
-LaTeX Warning: Hyper reference `acro:GC' on page xiii undefined on input line 6
-7.
+LaTeX Warning: Hyper reference `acro:GC' on page xi undefined on input line 67.
 
 
-LaTeX Warning: Hyper reference `acro:GC' on page xiii undefined on input line 6
-7.
+
+LaTeX Warning: Hyper reference `acro:GC' on page xi undefined on input line 67.
+
 
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-[13
+[11
 
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-[14
+[12
 
 
 
@@ -1596,7 +1565,10 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 
-] (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
+]
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.30756pt on input line 21.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -1646,7 +1618,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 [9]
-<gfx/transpiler.png, id=291, 1008.76875pt x 753.81625pt>
+<gfx/transpiler.png, id=274, 1008.76875pt x 753.81625pt>
 File: gfx/transpiler.png Graphic file (type png)
 <use gfx/transpiler.png>
 Package pdftex.def Info: gfx/transpiler.png  used on input line 159.
@@ -1676,7 +1648,7 @@ Overfull \hbox (9.04492pt too wide) in paragraph at lines 189--190
 -tions is CPython,
  []
 
-<gfx/venn.png, id=309, 1195.46625pt x 840.13875pt>
+<gfx/venn.png, id=291, 1195.46625pt x 840.13875pt>
 File: gfx/venn.png Graphic file (type png)
 <use gfx/venn.png>
 Package pdftex.def Info: gfx/venn.png  used on input line 193.
@@ -1717,7 +1689,7 @@ Overfull \vbox (5.71458pt too high) has occurred while \output is active []
 
 
 [17]
-Overfull \hbox (17.95422pt too wide) in paragraph at lines 247--248
+Overfull \hbox (17.95422pt too wide) in paragraph at lines 248--249
 \T1/pplj/m/n/10.95 ing in-put or pro-duc-ing out-put. Again, if we go back to o
 ur [][]\T1/fvm/m/n/10.95 Hello, World!
  []
@@ -1738,47 +1710,29 @@ Overfull \vbox (5.71458pt too high) has occurred while \output is active []
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 Package acronym Info: Label `acro:OOP' newly defined as it shall be overridden
-although it is yet undefined on input line 362.
+although it is yet undefined on input line 363.
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-[21])
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+[21] (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2020/03/24 1.8d listings language file
+)
+Overfull \vbox (5.71458pt too high) has occurred while \output is active []
 
 
 [22]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-[23
-
-
-
-
-
-
-]
+[23])
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 [24]
-\openout2 = `Chapters/Chapter0A.aux'.
-
- (./Chapters/Chapter0A.tex
-chapter A.
-
-Overfull \hbox (1.02399pt too wide) in paragraph at lines 7--13
-\T1/pplj/m/n/10.95 clu-daturque. Al-bu-cius ap-pel-lan-tur de-ter-ruis-set id e
-am, viven-dum par-
- []
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 62.
-)
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
@@ -1786,19 +1740,17 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 
+
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-[26
+[26]
+\openout2 = `Chapter03.aux'.
 
-
-
-
-]
-\openout2 = `FrontBackmatter/Bibliography.aux'.
-
- (./FrontBackmatter/Bibliography.tex)
+ (./Chapter03.tex
+chapter 3.
+)
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
@@ -1816,13 +1768,24 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 ]
+\openout2 = `FrontBackmatter/Bibliography.aux'.
+
+ (./FrontBackmatter/Bibliography.tex)
+
+LaTeX Warning: Empty bibliography on input line 12.
+
 \openout2 = `FrontBackmatter/Declaration.aux'.
 
- (./FrontBackmatter/Declaration.tex)
+(./FrontBackmatter/Declaration.tex)
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 [29
+
+
+
+
+
 
 
 
@@ -1847,10 +1810,9 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 ] (./classicthesis.aux (./FrontBackmatter/DirtyTitlepage.aux)
 (./FrontBackmatter/Titlepage.aux) (./FrontBackmatter/Titleback.aux)
 (./FrontBackmatter/Dedication.aux) (./FrontBackmatter/Abstract.aux)
-(./FrontBackmatter/Acknowledgments.aux) (./FrontBackmatter/Contents.aux)
-(./Chapter01.aux) (./Chapter02.aux) (./Chapters/Chapter0A.aux)
-(./FrontBackmatter/Bibliography.aux) (./FrontBackmatter/Declaration.aux)
-(./FrontBackmatter/Colophon.aux))
+(./FrontBackmatter/Contents.aux) (./Chapter01.aux) (./Chapter02.aux)
+(./Chapter03.aux) (./FrontBackmatter/Bibliography.aux)
+(./FrontBackmatter/Declaration.aux) (./FrontBackmatter/Colophon.aux))
 
  *File List*
   fix-cm.sty    2020/11/24 v1.1t fixes to LaTeX
@@ -2020,7 +1982,6 @@ FrontBackmatter/Titleback.tex
  ts1pplj.fd    2004/09/06 font definitions for TS1/pplj.
 FrontBackmatter/Dedication.tex
 FrontBackmatter/Abstract.tex
-FrontBackmatter/Acknowledgments.tex
 FrontBackmatter/Contents.tex
 Chapter01.tex
 lstlang1.sty    2020/03/24 1.8d listings language file
@@ -2030,8 +1991,9 @@ gfx/transpiler.png
 gfx/venn.png
 Chapter02.tex
 lstlang1.sty    2020/03/24 1.8d listings language file
-Chapters/Chapter0A.tex
 lstlang1.sty    2020/03/24 1.8d listings language file
+lstlang2.sty    2020/03/24 1.8d listings language file
+Chapter03.tex
 FrontBackmatter/Bibliography.tex
 FrontBackmatter/Declaration.tex
 FrontBackmatter/Colophon.tex
@@ -2047,11 +2009,11 @@ Package logreq Info: Writing requests to 'classicthesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33490 strings out of 478268
- 632764 string characters out of 5846348
- 1552846 words of memory out of 5000000
- 50740 multiletter control sequences out of 15000+600000
- 558363 words of font info for 157 fonts, out of 8000000 for 9000
+ 33197 strings out of 478268
+ 626235 string characters out of 5846348
+ 1548186 words of memory out of 5000000
+ 50465 multiletter control sequences out of 15000+600000
+ 550791 words of font info for 145 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,23n,106p,10608b,2367s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -2069,10 +2031,10 @@ ve/2022/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2022/
 texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2022/texmf-d
 ist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2022/texmf-dist/fon
 ts/type1/urw/palatino/uplri8a.pfb>
-Output written on classicthesis.pdf (45 pages, 585047 bytes).
+Output written on classicthesis.pdf (43 pages, 584641 bytes).
 PDF statistics:
- 858 PDF objects out of 1000 (max. 8388607)
- 769 compressed objects within 8 object streams
- 313 named destinations out of 1000 (max. 500000)
- 25000 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 838 PDF objects out of 1000 (max. 8388607)
+ 751 compressed objects within 8 object streams
+ 309 named destinations out of 1000 (max. 500000)
+ 23456 words of extra memory for PDF output out of 24883 (max. 10000000)
 

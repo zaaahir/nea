@@ -114,16 +114,17 @@ If data types are the bricks to our C- city, expressions and statements would be
 
 \subsection{Arithmetic}
 
-These will be familiar and are just the standard basic arithmetic operations, bar modulo. 
+These will be familiar and are just the standard basic arithmetic operations, including modulo.
 
 \begin{lstlisting}[language=C]
 183 + 298; // returns 481
 901 - 873; // returns 28
 81 * 12; // returns 972 
 672 / 16; // returns 42
+254 \% 32 // returns 30
 \end{lstlisting}
 
-We call the number's we are computing the operations upon, the operands and the ``\verb-+-, \verb+-+, \verb+*+ or \verb+/+'' the operator. As we are performing this process with two operands, we call them binary operators. Futhermore, most of these are infix operators, except \verb+-+ which is both an prefix operator (when used for negation) and a infix operator (when used for subtraction). We also have postfix operators (which come before the operands) and misfix operators, which have more than two operands and the operators are interleaved between them. An example from C is the ``ternary'' operator, illustrated below:
+We call the number's we are computing the operations upon, the operands and the ``\verb-+-, \verb+-+, \verb+*+, \verb+/+ or \verb+%+'' the operator. As we are performing this process with two operands, we call them binary operators. Futhermore, most of these are infix operators, except \verb+-+ which is both an prefix operator (when used for negation) and a infix operator (when used for subtraction). We also have postfix operators (which come before the operands) and misfix operators, which have more than two operands and the operators are interleaved between them. An example from C is the ``ternary'' operator, illustrated below:
 
 \begin{lstlisting}[language=C]
 condition ? thenArm : elseArm;
@@ -394,18 +395,57 @@ Classes aren't very useful by themselves, and we need to implement some sort of 
 
 If we want to access a field or method on the current object from within a method we can use the \verb+this+ statement. Note that assigning to a field creates it if it doesn't already exist.
 
-\begin{lstlisting}[language=python]
-class a{
-  b(c) {
-    print this.d;
+\begin{lstlisting}[language=ruby]
+class a {
+  init(b, c) {
+    this.b = b;
+    this.c = c;
   }
 }
+
+var d = a("e", "f");
+d.g("h");
 \end{lstlisting}
 
 Part of encapsulating data within an object is ensuring the object is in a valid state when it’s created, which can be done by defining an initializer, \verb+init()+. Any parameters passed to the class are forwarded to its initializer and it is called automatically when the object is constructed.
 
+C- supports single inheritance, which can be declared by using a less-than (\verb+<+). 
 
+\begin{lstlisting}[language=ruby]
+class a < b {
+  ;
+}
+\end{lstlisting}
 
+Here \verb+a+ is the derived class (also known as the subclass) while \verb+b+ is the base class (also known as the superclass). Every method defined in the superclass, even \verb+init()+, is also available to its subclasses. To call a method on our own instance without hitting our own methods can be done with \verb+super+.
+
+In a true OOP language every object is an instance of a class, even primitive values like numbers and Booleans, but in C- we aim to keep the feature set relativelt minimal.
+
+\section{The Standard Library}
+
+This is the last section in the overview, the standard library, whcih is the core set of instructions and functionality we directly implement in the interpreter and that all user-defined behavior is built on top of.
+
+We've already seen the \verb+print+ function which can be used to output data to the user, and we'll need a function which can be used to record the amount of time a program takes to be able to compare different optimizations, so we use \verb+clock+ which returns the number of seconds since the program started. Other utility functions include:
+
+\begin{itemize}
+ \item \verb+exit(x)+ – exits the process with the number \verb+x+ as the exit code. \verb+x+ must be a whole number between 0 and 255 inclusive.
+ \item \verb+str(x)+ – converts the value \verb+x+ into a string.
+ \item \verb+type(x)+ – returns the type of the value \verb+x+ as a string.
+ \item \verb+eprint(x)+ – prints the value v to the standard error stream
+ \item \verb+argc()+ – returns the number of command line arguments the interpreter was launched with.
+ \item \verb+argv(i)+ – returns the command line argument at position \verb+i+; zero should be the interpreter program, and numbers up to (but not including) the return value of \verb+argc()+ are additional arguments.
+ \item \verb+chr(x)+ – returns a one-character string whose first byte is the number represented by \verb+x+. The valid range for \verb+x+ depends on how the platform treats C's char type; for signed char it can be any whole number between -128 and 127 inclusive.
+\end{itemize}
+
+We also add some basic mathematical functions:
+
+\begin{itemize}
+ \item \verb+ceil(x)+ \( \lceil x \rceil \) – returns the number \verb+x+ rounded up to the nearest whole number. For example, 0.4 would be rounded to 1. 
+ \item \verb+floor(x)+ \( \lfloor x \rfloor \) – returns the number \verb+x+ rounded down to the nearest whole number. For example, 1.9 would be rounded to 1.
+ \item \verb+round(x)+ – returns the number \verb+x+ rounded to the nearest whole number. For example, 1.4 would be rounded to 1 and 1.6 would be rounded to 2.  
+\end{itemize}
+
+We plan to add trigonometric functions such as \verb+sin(x)+ as an extenstion to the project.
 
 %*****************************************
 %*****************************************

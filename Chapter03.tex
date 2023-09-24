@@ -1,0 +1,23 @@
+% !TEX root = classicthesis.tex
+
+%************************************************
+\chapter{A Bytecode Implementation}\label{ch:bytecode} % $\mathbb{ZNR}$
+%************************************************
+
+\section{Why Bytecode?}
+
+We choose a bytecode implementation for it's speed compared to the main rival candidate for an interpreter; a tree-walk interpreter. We've explained the general reason for this in our design overview. 
+
+In more depth, when we write any piece of code that's to be compiled using an AST, it's just not memory efficient. Each fragment of code becomes an AST node. Take the expression \verb%1 + 2% turns into a flurry of objects with pointers, each adding an extra 32 or 64 bits of overhead to the object. Not only this, when spreading our data across the heap in a loosely connected web of objects, we have problems with spatial locality. 
+
+Spatial locality (also known as data locality) refers to the use of data elements within relatively close storage locations. Modern CPUs can process data much faster than they can retreive it from RAM, leading to the use of (multiple layers of) caching. If a piece of memory it needs is already in the cache, it can be loaded more quickly, even upto two orders of magnitude faster. 
+
+The CPU ``predicts'' what data you need by pulling in adjacent bytes to what is currently being read from RAM and stores them in cache. If our program next requests some data close enough to be inside that cache line, we end up with a faster program experience. To take advantage of this, the way we represent code in memory should be dense and ordered like it’s read. 
+
+However, when using an AST, the sub-objects can be stored anyway. Every step the tree-walker takes where it follows a reference to a child node may step outside the bounds of the cache and force the CPU to stall until the next data can be recalled from RAM.
+
+%*****************************************
+%*****************************************
+%*****************************************
+%*****************************************
+%*****************************************

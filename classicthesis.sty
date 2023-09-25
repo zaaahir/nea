@@ -43,6 +43,7 @@
 %\PassOptionsToPackage{latest}{latexrelease} % replacement for fixltx2e, emulate newer kernel version if older is detected
     %\RequirePackage{latexrelease} % will be put back in once it is available in more distributions
 \RequirePackage{float}
+\DeclareMathAlphabet{\mathcal}{OMS}{cmsy}{m}{n}
 \RequirePackage{ifthen}
     \newboolean{@tocaligned} % the left column of the toc will be aligned (no indention)
     \newboolean{@eulerchapternumbers} % use AMS Euler for chapter font (otherwise Palatino)
@@ -162,6 +163,7 @@
 % PDF and XeLaTeX Stuff
 % ********************************************************************
 \RequirePackage{ifpdf}
+
 \ifpdf\RequirePackage{hyperref}\fi % for texorpdfstring command below
 
 % Necessary to rewrite hacks for chapters and parts and toc

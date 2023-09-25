@@ -222,7 +222,7 @@ Non-zero       & Larger than \verb.oldSize.  & Grow existing allocation   \\ \hl
 \end{tabular} \par}
 \end{table}
 
-Although this looks like a lot of different cases to consider for, the implementation is quite simple. We'lll add this to a new file \verb,memory.c,
+Although this looks like a lot of different cases to consider for, the implementation is quite simple. We'll add this to a new file \verb,memory.c,
 
 \begin{lstlisting}[language=C]
 // memory.c
@@ -241,6 +241,104 @@ void* reallocate(void* pointer, size_t oldSize, size_t newSize) {
   return result;
 }
 \end{lstlisting}
+
+When \verb.newSize. is zero, we handle deallocation ourselves by calling \verb,free(),. Otherwise, we rely on the C standard library's \verb.realloc(). function, which conveniently supports the other three aspects of our memory management policy.
+
+The interesting cases arise when both \verb.oldSize. and \verb.newSize. are non-zero. In such instances, \verb.realloc(). is instructed to resize the previously allocated memory block. If the new size is smaller than the existing block, it updates the block's size and returns the same pointer provided.
+
+If the new size is larger, it attempts to expand the existing block, but this is contingent on there being available memory space beyond it. It can only do this if the memory following the block is not already in use. If there isn't enough room to grow the block, \verb.realloc(). takes an alternative approach: it allocates a new memory block of the desired size, copies the old data into it, frees the old block, and then returns a pointer to the new block.
+
+This behavior aligns perfectly with our dynamic array requirements. However, it's crucial to acknowledge that due to the finite nature of computer resources, allocation can fail if there's insufficient memory. In such cases, \verb.realloc(). will return \verb.NULL., meaning we should add an extra fallback for this case:
+
+\begin{lstlisting}[language=C]
+// memory.c
+
+void* result = realloc(pointer, newSize);
+  if (result == NULL) exit(1);
+  return result;
+\end{lstlisting}
+
+We still can't do anything very useful with the \ac{VM} without it getting it the memory it needs, but at least we can detect that  and abort the process instead of just returning a \verb/NULL/ pointer and it causing problems later.
+
+Now we've found a way to create new chunks and write instructions to them. Because we're creating this in C, memory management is important and we need to find a way to free chunks as well. We declare it first:
+
+\begin{lstlisting}[language=C]
+// memory.h
+
+void freeChunk(Chunk* chunk);
+\end{lstlisting}
+
+And implement it like so:
+
+\begin{lstlisting}[language=C]
+// memory.c
+
+void freeChunk(Chunk* chunk) {
+  FREE_ARRAY(uint8_t, chunk->code, chunk->capacity);
+  initChunk(chunk);
+}
+\end{lstlisting}
+
+This works by deallocating all the memory and then calling \verb/initChunk()/ to zero out the fields leaving the chunk in a (well defined) empty space. To free the memory completely, we need to add another macro to the header file.
+
+\begin{lstlisting}[language=C]
+// memory.h
+
+#define FREE_ARRAY(type, pointer, oldCount) \
+    reallocate(pointer, sizeof(type) * (oldCount), 0)
+\end{lstlisting}
+
+Like the other macro, \verb>GROW_ARRAY()>, this is a wrapper around a \verb.reallocate(). call which frees the memory by passing in zero for the new size.
+
+\subsection{Disassembling Chunks}
+
+Let's try our work by trying to hand-building a sample chunk. We'll test it through \verb,main.c,. 
+
+\begin{lstlisting}[language=C]
+// main.c
+
+#include "common.h"
+#include "chunk.h"
+
+int main(int argc, const char* argv[]) {
+  Chunk chunk;
+  initChunk(&chunk);
+  writeChunk(&chunk, OP_RETURN);
+  freeChunk(&chunk);
+  return 0;
+\end{lstlisting}
+
+We can run this and it doesn't return any errors, but we can't exactly confirm if our tests worked. This makes sense since all we've done it shift around bytes in memory and there's no human friendly way to see what we've created. To resolve this we're going to create a disassembler.
+
+An assembler, in its traditional form, is a program designed to process a file containing human-readable mnemonic names for CPU instructions, such as \verb.ADD. and \verb.MULT., and convert them into their corresponding binary machine code representations. Conversely, a disassembler performs the reverse operation: when provided with a chunk of machine code, it generates a textual listing of the instructions contained within.
+
+Let's pass the chunk in \verb,main.c, through the disassembler after creation:
+
+\begin{lstlisting}[language=C]
+// main.c
+
+disassembleChunk(&chunk, "test chunk");
+\end{lstlisting}
+
+We should create a debug header for this as well:
+
+\begin{lstlisting}[language=C]
+// debug.h
+
+#ifndef debug_h
+#define debug_h
+
+#include "chunk.h"
+
+void disassembleChunk(Chunk* chunk, const char* name);
+int disassembleInstruction(Chunk* chunk, int offset);
+
+#endif
+\end{lstlisting}
+
+
+
+
 
 
 %*****************************************

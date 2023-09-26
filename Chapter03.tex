@@ -336,7 +336,25 @@ int disassembleInstruction(Chunk* chunk, int offset);
 #endif
 \end{lstlisting}
 
+In the \verb.main(). function, we use \verb.disassembleChunk(). to disassemble all instructions in the chunk. This relies on another function that handles disassembling individual instructions. We've put this in the header file because we'll need to call upon it in later chapters as part of the \ac{VM}.
 
+We should now implement this \verb.disassembleChunk(). function into a new file, \verb,debug.c,:
+
+\begin{lstlisting}[language=C]
+// debug.c
+
+#include <stdio.h>
+
+#include "debug.h"
+
+void disassembleChunk(Chunk* chunk, const char* name) {
+  printf("== %s ==\n", name);
+
+  for (int offset = 0; offset < chunk->count;) {
+    offset = disassembleInstruction(chunk, offset);
+  }
+}
+\end{lstlisting}
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.4)  25 SEP 2023 20:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.4)  26 SEP 2023 18:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1187,15 +1187,34 @@ Package: prelim2e 2020/11/24 v2.0 prelim2e Package
 Package remreset Warning: The remreset package is obsolete:
 (remreset)                \@removefromreset is defined.
 
-)))
-LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 56.
+))) (/usr/local/texlive/2022/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/local/texlive/2022/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count452
+\Gm@cntv=\count453
+\c@Gm@tempcnt=\count454
+\Gm@bindingoffset=\dimen194
+\Gm@wd@mp=\dimen195
+\Gm@odd@mp=\dimen196
+\Gm@even@mp=\dimen197
+\Gm@layoutwidth=\dimen198
+\Gm@layoutheight=\dimen199
+\Gm@layouthoffset=\dimen256
+\Gm@layoutvoffset=\dimen257
+\Gm@dimlist=\toks34
+)
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 57.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'american'.
 LaTeX Font Info:    Trying to load font information for T1+pplj on input line 5
-7.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/t1pplj.fd
+8.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/t1pplj.fd
 File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
 )
 (./ClassicThesis.aux (./FrontBackmatter/DirtyTitlepage.aux)
@@ -1206,27 +1225,27 @@ File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
 (./FrontBackmatter/Declaration.aux) (./FrontBackmatter/Colophon.aux))
 \openout1 = `ClassicThesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-Package scrbase Info: activating american \contentsname on input line 57.
-Package scrbase Info: activating american \listfigurename on input line 57.
-Package scrbase Info: activating american \listtablename on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+Package scrbase Info: activating american \contentsname on input line 58.
+Package scrbase Info: activating american \listfigurename on input line 58.
+Package scrbase Info: activating american \listtablename on input line 58.
 Package biblatex Info: Trying to load language 'american'...
 Package biblatex Info: ... file 'american.lbx' found.
 
@@ -1273,17 +1292,17 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'ClassicThesis.bbl' found.
 
 (./ClassicThesis.bbl)
-Package biblatex Info: Reference section=0 on input line 57.
-Package biblatex Info: Reference segment=0 on input line 57.
+Package biblatex Info: Reference section=0 on input line 58.
+Package biblatex Info: Reference segment=0 on input line 58.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count452
-Package scrhack Info: undefining \float@addtolists on input line 57.
-Package hyperref Info: Link coloring ON on input line 57.
+\c@lstlisting=\count455
+Package scrhack Info: undefining \float@addtolists on input line 58.
+Package hyperref Info: Link coloring ON on input line 58.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1295,11 +1314,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count453
+\c@section@level=\count456
 )
-LaTeX Info: Redefining \ref on input line 57.
-LaTeX Info: Redefining \pageref on input line 57.
-LaTeX Info: Redefining \nameref on input line 57.
+LaTeX Info: Redefining \ref on input line 58.
+LaTeX Info: Redefining \pageref on input line 58.
+LaTeX Info: Redefining \nameref on input line 58.
  (./ClassicThesis.out) (./ClassicThesis.out)
 \@outlinefile=\write4
 \openout4 = `ClassicThesis.out'.
@@ -1311,28 +1330,28 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message adding:
 (scrreprt)             \usepackage{bookmark}
-(scrreprt)           before \begin{document} on input line 57.
+(scrreprt)           before \begin{document} on input line 58.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count454
+\BKM@id=\count457
 ))
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count455
-\scratchdimen=\dimen194
+\scratchcounter=\count458
+\scratchdimen=\dimen258
 \scratchbox=\box63
-\nofMPsegments=\count456
-\nofMParguments=\count457
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count458
-\MPscratchDim=\dimen195
-\MPnumerator=\count459
-\makeMPintoPDFobject=\count460
-\everyMPtoPDFconversion=\toks35
+\nofMPsegments=\count459
+\nofMParguments=\count460
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count461
+\MPscratchDim=\dimen259
+\MPnumerator=\count462
+\makeMPintoPDFobject=\count463
+\everyMPtoPDFconversion=\toks36
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1342,11 +1361,11 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 57.
-Package microtype Info: Applying patch `item' on input line 57.
-Package microtype Info: Applying patch `toc' on input line 57.
-Package microtype Info: Applying patch `eqnum' on input line 57.
-Package microtype Info: Applying patch `footnote' on input line 57.
+LaTeX Info: Redefining \microtypecontext on input line 58.
+Package microtype Info: Applying patch `item' on input line 58.
+Package microtype Info: Applying patch `toc' on input line 58.
+Package microtype Info: Applying patch `eqnum' on input line 58.
+Package microtype Info: Applying patch `footnote' on input line 58.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1358,8 +1377,41 @@ Package microtype Info: No adjustment of character kerning.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/microtype/mt-ppl.cfg
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
-\openout2 = `FrontBackmatter/DirtyTitlepage.aux'.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(79.00317pt, 400.0pt, 118.50476pt)
+* v-part:(T,H,B)=(90.0pt, 665.04694pt, 90.0pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=400.0pt
+* \textheight=665.04694pt
+* \oddsidemargin=6.73318pt
+* \evensidemargin=46.23477pt
+* \topmargin=-18.62pt
+* \headheight=15.95pt
+* \headsep=20.40001pt
+* \topskip=11.0pt
+* \footskip=47.60002pt
+* \marginparwidth=76.63118pt
+* \marginparsep=21.89462pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+\openout2 = `FrontBackmatter/DirtyTitlepage.aux'.
 
 (./FrontBackmatter/DirtyTitlepage.tex
 LaTeX Font Info:    Trying to load font information for U+zeur on input line 8.
@@ -1397,14 +1449,14 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 )
-LaTeX Font Info:    Trying to load font information for T1+fvm on input line 68
+LaTeX Font Info:    Trying to load font information for T1+fvm on input line 69
 .
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 7.65005pt on input line 68.
+(Font)              scaled to size 7.65005pt on input line 69.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
@@ -1483,7 +1535,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 \openout2 = `FrontBackmatter/Abstract.aux'.
 
  (./FrontBackmatter/Abstract.tex
-Package acronym Info: Label `acro:VM' newly defined as it shall be overridden
+Package acronym Info: Label `acro:CAS' newly defined as it shall be overridden
 although it is yet undefined on input line 12.
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
@@ -1605,7 +1657,14 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 ]
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 9.30756pt on input line 21.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
+
+Overfull \hbox (18.92314pt too wide) in paragraph at lines 21--22
+\T1/pplj/m/n/10.95 spe-cial char-ac-ters such as [][]\T1/fvm/m/n/10.95 ; []\T1/
+pplj/m/n/10.95 (known as a seper-a-tor), to string lit-er-als [][]\T1/fvm/m/n/1
+0.95 ("Hello, World!")
+ []
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -1621,24 +1680,22 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 [4]
-Overfull \hbox (1.80771pt too wide) in paragraph at lines 42--43
-[]\T1/pplj/m/n/10.95 In a stat-i-cally typed lan-guage, a lan-guage where a var
-i-able is known
- []
-
 Package acronym Info: Label `acro:IR' newly defined as it shall be overridden
 although it is yet undefined on input line 59.
 
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+Overfull \vbox (5.71458pt too high) has occurred while \output is active []
 
 
 [5]
+Package acronym Info: Label `acro:JIT' newly defined as it shall be overridden
+although it is yet undefined on input line 109.
+
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 [6]
-Package acronym Info: Label `acro:JIT' newly defined as it shall be overridden
-although it is yet undefined on input line 109.
+Package acronym Info: Label `acro:VM' newly defined as it shall be overridden
+although it is yet undefined on input line 123.
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
@@ -1648,65 +1705,54 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 [8]
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
-
-[9]
 <gfx/transpiler.png, id=285, 1008.76875pt x 753.81625pt>
 File: gfx/transpiler.png Graphic file (type png)
 <use gfx/transpiler.png>
 Package pdftex.def Info: gfx/transpiler.png  used on input line 159.
-(pdftex.def)             Requested size: 252.0pt x 188.30406pt.
+(pdftex.def)             Requested size: 300.0pt x 224.17973pt.
 Package acronym Info: Label `acro:API' newly defined as it shall be overridden
 although it is yet undefined on input line 163.
-
-Overfull \hbox (4.12836pt too wide) in paragraph at lines 163--164
-[]\T1/pplj/m/n/10.95 Another valu-able ap-pli-ca-tion of source-to-source com-p
-il-ing in-volves
- []
-
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-[10 <./gfx/transpiler.png>]
+[9 <./gfx/transpiler.png>]
 Package acronym Info: Label `acro:AOT' newly defined as it shall be overridden
 although it is yet undefined on input line 173.
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-[11]
-Overfull \hbox (9.04492pt too wide) in paragraph at lines 189--190
-[]\T1/pplj/m/n/10.95 An ex-am-ple of a lan-guage uti-liz-ing both im-ple-men-ta
--tions is CPython,
- []
-
+[10]
 <gfx/venn.png, id=302, 1195.46625pt x 840.13875pt>
 File: gfx/venn.png Graphic file (type png)
 <use gfx/venn.png>
 Package pdftex.def Info: gfx/venn.png  used on input line 193.
-(pdftex.def)             Requested size: 252.0pt x 177.08813pt.
+(pdftex.def)             Requested size: 300.0pt x 210.82898pt.
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-[12 <./gfx/venn.png>]
+[11 <./gfx/venn.png>]
 \openout2 = `Chapter02.aux'.
 
  (./Chapter02.tex
-chapter 2.
-
-Overfull \vbox (5.71458pt too high) has occurred while \output is active []
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-[13
+[12
 
 
 
 
 
 ]
+chapter 2.
+
+Overfull \vbox (5.71458pt too high) has occurred while \output is active []
+
+
+[13]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
@@ -1715,7 +1761,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 [15]
-Overfull \vbox (5.71458pt too high) has occurred while \output is active []
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 [16]
@@ -1723,24 +1769,14 @@ Overfull \vbox (5.71458pt too high) has occurred while \output is active []
 
 
 [17]
-Overfull \hbox (17.95422pt too wide) in paragraph at lines 251--252
-\T1/pplj/m/n/10.95 ing in-put or pro-duc-ing out-put. Again, if we go back to o
-ur [][]\T1/fvm/m/n/10.95 Hello, World!
- []
-
-
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 [18]
-Overfull \vbox (5.71458pt too high) has occurred while \output is active []
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-[19]
-Overfull \vbox (5.71458pt too high) has occurred while \output is active []
-
-
-[20] (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
+[19] (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 Package acronym Info: Label `acro:OOP' newly defined as it shall be overridden
@@ -1749,7 +1785,13 @@ although it is yet undefined on input line 366.
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-[21] (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
+[20]
+Overfull \hbox (0.8067pt too wide) in paragraph at lines 372--373
+[]\T1/pplj/m/n/10.95 Prototype-based lan-guages merge these two con-cepts. Ther
+e are only ob-jects^^Vno
+ []
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang2.sty
@@ -1758,24 +1800,28 @@ File: lstlang2.sty 2020/03/24 1.8d listings language file
 Overfull \vbox (5.71458pt too high) has occurred while \output is active []
 
 
-[22]
+[21]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-[23])
+[22])
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-[24]
+[23]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
-[25
+[24
 
 
 
 
 ]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+
+[25]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
@@ -1793,13 +1839,13 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 ]
-<gfx/process.png, id=545, 623.32875pt x 886.31125pt>
+<gfx/process.png, id=549, 623.32875pt x 886.31125pt>
 File: gfx/process.png Graphic file (type png)
 <use gfx/process.png>
 Package pdftex.def Info: gfx/process.png  used on input line 32.
-(pdftex.def)             Requested size: 117.60205pt x 167.21077pt.
+(pdftex.def)             Requested size: 140.00244pt x 199.07332pt.
 
-Overfull \vbox (5.71458pt too high) has occurred while \output is active []
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 [28 <./gfx/process.png>]
@@ -1807,11 +1853,11 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 [29]
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+Overfull \vbox (5.71458pt too high) has occurred while \output is active []
 
 
 [30]
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+Overfull \vbox (5.71458pt too high) has occurred while \output is active []
 
 
 [31]
@@ -1819,19 +1865,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 [32]
-Overfull \hbox (1.40181pt too wide) in paragraph at lines 251--252
-[]\T1/pplj/m/n/10.95 This be-hav-ior aligns per-fectly with our dy-namic ar-ray
- re-quire-ments.
- []
-
-
-Overfull \hbox (22.06165pt too wide) in paragraph at lines 282--283
-[]\T1/pplj/m/n/10.95 This works by deal-lo-cat-ing all the mem-ory and then cal
-l-ing [][]\T1/fvm/m/n/10.95 initChunk()
- []
-
-
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+Overfull \vbox (5.71458pt too high) has occurred while \output is active []
 
 
 [33]
@@ -2039,6 +2073,8 @@ titlesec.sty    2021/07/05 v2.14 Sectioning titles
  scrtime.sty    2021/11/13 v3.35 KOMA-Script package (time of LaTeX run)
 prelim2e.sty    2020/11/24 v2.0 prelim2e Package
 remreset.sty    
+geometry.sty    2020/01/02 v5.9 Page Geometry
+  ifvtex.sty    2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
   t1pplj.fd    2004/09/06 font definitions for T1/pplj.
  english.lbx    2022/02/02 v3.17 biblatex localization (PK/MW)
 american.lbx    2022/02/02 v3.17 biblatex localization (PK/MW)
@@ -2098,10 +2134,10 @@ Package logreq Info: Writing requests to 'ClassicThesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33705 strings out of 478268
- 633959 string characters out of 5846348
- 1565263 words of memory out of 5000000
- 50775 multiletter control sequences out of 15000+600000
+ 34210 strings out of 478268
+ 641865 string characters out of 5846348
+ 1605562 words of memory out of 5000000
+ 51259 multiletter control sequences out of 15000+600000
  552326 words of font info for 151 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,23n,106p,10608b,2383s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2120,10 +2156,10 @@ ve/2022/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2022/
 texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2022/texmf-d
 ist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2022/texmf-dist/fon
 ts/type1/urw/palatino/uplri8a.pfb>
-Output written on ClassicThesis.pdf (51 pages, 691770 bytes).
+Output written on ClassicThesis.pdf (51 pages, 692116 bytes).
 PDF statistics:
- 1104 PDF objects out of 1200 (max. 8388607)
- 1004 compressed objects within 11 object streams
- 489 named destinations out of 1000 (max. 500000)
+ 1127 PDF objects out of 1200 (max. 8388607)
+ 1027 compressed objects within 11 object streams
+ 505 named destinations out of 1000 (max. 500000)
  25029 words of extra memory for PDF output out of 29859 (max. 10000000)
 

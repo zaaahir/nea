@@ -1,1 +1,5 @@
-Can be compiled with `pdfLaTex`. Chapters 01, 02, 03 have `% !TEX root = classicthesis.tex` added to allow for compilation from any of those files, although it is reccomended to compile from `classicthesis.tex`. A compiled PDF is available at `classicthesis.pdf`. 
+Can be compiled with `pdfLaTex`. Chapters 01, 02, 03 have `% !TEX root = classicthesis.tex` added to allow for compilation from any of those files, although it is reccomended to compile from `classicthesis.tex`. A compiled PDF is available at `classicthesis.pdf`. Each image is stored in ~/gfx. 
+
+Note for compilation, several packages will need to be installed along with your current installation of LaTeX. Any standard LaTeX distribution that is not barebone should include most of these packages. If needed, the CTAN site for `classicthesis` should include all needed packages, as well as of course `classicthesis` which this has been typeset in.
+
+Code is stored in a seperate repository. Note that code is typeset directly, rather than added into the document as images. 

@@ -356,6 +356,28 @@ void disassembleChunk(Chunk* chunk, const char* name) {
 }
 \end{lstlisting}
 
+To dismatle a chunk, we initiate the process by printing a concise header, which serves to identify the chunk under scrutiny. Subsequently, we proceed to traverse the bytecode, meticulously disassembling each instruction. Notably, our approach to iterating through the code differs somewhat from the conventional method. Instead of incrementing the offset within the loop, we delegate this task to the \verb.disassembleInstruction(). function. Upon invoking this function, subsequent to disassembling the instruction located at the specified offset, it conveniently furnishes us with the offset pertaining to the next instruction. This design choice is influenced by the fact that, as we will later elucidate, instructions may vary in size. The core of said ``debug'' module is this function: 
+
+\begin{lstlisting}[language=C]
+// debug.c
+
+int disassembleInstruction(Chunk* chunk, int offset) {
+  printf("%04d ", offset);
+
+  uint8_t instruction = chunk->code[offset];
+  switch (instruction) {
+    case OP_RETURN:
+      return simpleInstruction("OP_RETURN", offset);
+    default:
+      printf("Unknown opcode %d\n", instruction);
+      return offset + 1;
+  }
+}
+\end{lstlisting}
+
+This prints the byte offset of the given instruction, tells us where in the chunk this instruction is, good for control flow, when we jump around bytecode. 
+
+reads skingle byte from bytecode at said offset, (opcode) which we switch on, For each kind of instruction, we dispatch to a little utility function for displaying it. On the off chance that the given byte doesn’t look like an instruction at all—a bug in our compiler—we print that too. For the one instruction we do have, OP_RETURN, the display function is:
 
 
 
